@@ -113,7 +113,11 @@ It can take several minutes for `rippled` to sync with the rest of the network, 
 
 Automatic rippled updates can be enabled with a one-time Cron configuration:
 
+<<<<<<< 6c5abcd9279cb8692d612a113951c9fb6da05eae
 1. Check that `/opt/ripple/bin/update-rippled.sh` exists. If it does not, [update manually](#manual).
+=======
+1. Check that `/opt/ripple/bin/update-rippled.sh` exists. If it does not, perform a [manual update](#manual) before proceeding.
+>>>>>>> Clarify rippled auto-updating instructions
 
 2. Install `crond`:
 
@@ -129,7 +133,11 @@ Automatic rippled updates can be enabled with a one-time Cron configuration:
         0 * * * * /opt/ripple/bin/update-rippled.sh
 
 
+<<<<<<< 6c5abcd9279cb8692d612a113951c9fb6da05eae
 The script updates the installed `rippled` package within an hour of each new release.
+=======
+The installed `rippled` package will be updated within an hour of a new release. The `RANDOM_DELAY` acts to stagger when different rippleds update and restart.
+>>>>>>> Clarify rippled auto-updating instructions
 
 ### Manual ###
 
